@@ -1,0 +1,150 @@
+/* General App Styles */
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+/* Simple Navigation Bar matching screenshots */
+.navbar-simple {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.nav-link-simple {
+  font-size: 1.15rem;
+  color: #777777 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 400;
+}
+
+.nav-link-simple:hover {
+  color: #000000 !important;
+}
+
+/* Specific styling for the first link/active states */
+.nav-link-simple:first-child {
+  font-weight: 500;
+  color: #000000 !important;
+}
+
+/* Home Page Slideshow */
+.carousel-container {
+  margin-top: 10px;
+}
+
+.carousel-img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* Food circles section (Circular menu below carousel) */
+.food-circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+  max-width: 100%;
+}
+
+.food-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #333333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.food-circle:hover {
+  transform: scale(1.05);
+}
+
+.food-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Page Titles in Red matching screenshots */
+.home-title, .news-title {
+  color: #b32a2a;
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* News Page Grid and Card Styling */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.news-card {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.news-image {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.news-link-bottom {
+  color: #0d6efd;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.news-link-bottom:hover {
+  color: #0a58ca;
+}
+
+/* Quiz Page Container */
+.quiz-container {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.question-item {
+  border-bottom: 1px solid #dee2e6;
+  padding: 20px 0;
+}
+
+.question-item:last-child {
+  border-bottom: none;
+}
+
+.question-number {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.option {
+  margin-bottom: 10px !important;
+}
+
+.btn-submit {
+  margin-top: 20px;
+}
